@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.View1">
+  <ContentView.Content>
+        <Grid>
+            <BoxView x:Name="Gradient" Scale="4" AnchorX="1" AnchorY="0">
+                <BoxView.Background>
+                    <LinearGradientBrush StartPoint="0,0"
+                     EndPoint="1,1">
+                        <GradientStop Color="#18B08F"
+                  Offset="0.0" />
+
+                        <GradientStop Color="#00376C"
+                  Offset="0.0" />
+                    </LinearGradientBrush>
+
+                </BoxView.Background>
+              
+            </BoxView>
+            <!--<Image Source="D:\Xamarin 2\App1\Photo logo.jpg" HorizontalOptions="Start" VerticalOptions="Start">
+
+        </Image>-->
+           
+                
+
+            <Grid >
+                <Button  Text="Utilisateurs" TextColor="#00376C" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="100" Background="#E8550C" CornerRadius="20" Clicked="Button_Clicked" Margin="40,400,50,0"
+                 FontSize="11" FontAttributes="Bold, Italic"/>
+                <Button Text="Admin" TextColor="#18B08F"  WidthRequest="100" HeightRequest="100"  VerticalOptions="CenterAndExpand" Background="#EE4037" Margin="40,400,50,0"
+                    BackgroundColor="White" HorizontalOptions="Center" CornerRadius="20" FontSize="15" FontAttributes="Bold, Italic" Clicked="Button_Clicked_1" />
+            </Grid>
+      
+
+           
+        </Grid>
+    </ContentView.Content>
+</ContentView>

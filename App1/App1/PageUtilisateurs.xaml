@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.PageUtilisateurs">
+  <ContentView.Content>
+      
+            <Grid>
+                <BoxView x:Name="Gradient" Scale="4" AnchorX="1" AnchorY="0">
+                    <BoxView.Background>
+                        <LinearGradientBrush StartPoint="0,0"
+                     EndPoint="1,1">
+                            <GradientStop Color="#18B08F"
+                          Offset="0.0" />
+
+                            <GradientStop Color="#00376C"
+                  Offset="0.0" />
+                        </LinearGradientBrush>
+
+                    </BoxView.Background>
+
+                </BoxView>
+                <!--<Image Source="D:\Xamarin 2\App1\Photo logo.jpg" HorizontalOptions="Start" VerticalOptions="Start">
+
+        </Image>-->
+
+
+
+            <Frame WidthRequest="200"  BorderColor="White" Padding="0" CornerRadius="20" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Margin="50">
+                <Button Text="Générer le Qrcode" TextColor="White" Grid.Column="3" WidthRequest="60" HeightRequest="60" Background="#E8550C" CornerRadius="20" Clicked="Button_Clicked" />
+            </Frame>
+            <Label Text="Bonjour, Utilisateur !" FontSize="Large" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="White"  FontAttributes="Bold, Italic">
+
+            </Label>
+           
+
+        </Grid>
+    </ContentView.Content>
+</ContentView>
